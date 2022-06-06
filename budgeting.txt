@@ -1,0 +1,28 @@
+Budgeting Questions
+    question: "What is a budget?",
+    a: "Estimated income and expenditure over a period of time",
+    b: "How much you've spent",
+    c: "Attitudes towards money",
+    d: "What you have in the bank",
+    correct: "a",
+
+    question: "What are the 3 biggest expenses?",
+    a: "Food, stationery, toys",
+    b: "Food, shelter, transport",
+    c: "Shelter, clothing, food",
+    d: "Food, electronics, toys",
+    correct: "b",
+
+    question: "What is an example of an income?",
+    a: "Stationery",
+    b: "Insurance",
+    c: "Petrol",
+    d: "Lunch money",
+    correct: "d",
+
+    question: "What is an example of an expense?",
+    a: "Dividends",
+    b: "Gifts",
+    c: "Repairs",
+    d: "Wages",
+    correct: "b",
