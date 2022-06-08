@@ -12,6 +12,47 @@ body {
 
 p {
   text-align: center;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 4%;
+}
+
+a li{
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 4%;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
+}
+
+h4 {
+  tex
+}
+
+ul {
+  /*Takes away the bulletpoints in the list*/
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 1.2rem;
+  /*Spacing between the options*/
+  margin: 1rem 0;
+
+}
+
+.content a {
+  text-align: center;
 }
 
 .container {
@@ -23,34 +64,17 @@ p {
   height: 300px;
 }
 
-.column-left {
-  width: 33%;
-  left: 0;
-  background: inherit;
-  position: absolute;
-}
-
-.column-center {
-  width: 33%;
-  background: inherit;
-  margin-right: 0.5%;
-  margin-left: 0.5%;
-  position: absolute;
-}
-
-.column-right {
-  width: 33%;
-  right: 0;
-  position: absolute;
-  background: inherit;
-}
-
 .quiz-container {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px 2px rgba(`100, 100, 100, 0.1);
   width: 600px;
   overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .quiz-header {
@@ -150,23 +174,54 @@ p {
   padding: 4rem;
 }
 
-h1 {
-  font-size: 40px;
+
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-h2 {
-  padding: 1rem;
-  text-align: center;
-  margin: 0;
+.triple-containers-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 64px;
+
 }
 
-ul {
-  /*Takes away the bulletpoints in the list*/
-  list-style-type: none;
-  padding: 0;
+.triple-container-header{
+    font-size: 20px;
+    text-align: center;
+    border: 3px solid #543118;
+    border-radius: 5px;
+    padding: 8px;
 }
 
-ul li {
-  font-size: 1.2rem;
-  /*Spacing between the options*/
-  margin: 1rem 0;
+.triple-container-body{
+    text-align: justify;
+    text-justify: inter-word;
+    padding-top: 12px;
+}
+
+.triple-container-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 12px;
+    font-size: 18px;
+
+}
+
+.triple-container-footer button{
+
+}
+
+.triple-container{
+    background-color: #F5E7DE;
+    padding: 32px;
+}
+
+.triple-container + .triple-container{
+    margin-left: 32px;
+}
