@@ -1,7 +1,8 @@
+/* Font that I use throughout the website */
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
+/* General Styling */
 * {
-  /* box-sizing: border-box; */
   background-color: #F5E7DE;
 }
 
@@ -12,9 +13,6 @@ body {
 
 p {
   text-align: center;
-  width: 80%;
-  margin-left: 10%;
-  margin-top: 4%;
 }
 
 a li{
@@ -34,10 +32,6 @@ h2 {
   margin: 0;
 }
 
-h4 {
-  tex
-}
-
 ul {
   /*Takes away the bulletpoints in the list*/
   list-style-type: none;
@@ -51,10 +45,12 @@ ul li {
 
 }
 
-.content a {
+.intro-container p {
   text-align: center;
+  margin-left: : 4.5%;
 }
 
+/* Quiz Styling */
 .container {
   position: relative;
   width: 500px;
@@ -65,12 +61,10 @@ ul li {
 }
 
 .quiz-container {
-  background-color: #fff;
+  background-color: #F5E7DE;
   border-radius: 10px;
-  box-shadow: 0 0 10px 2px rgba(`100, 100, 100, 0.1);
-  width: 600px;
+  width: 800px;
   overflow: hidden;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,28 +75,7 @@ ul li {
   padding: 4rem;
 }
 
-/* Style the header with a grey background and some padding */
-.header {
-  overflow: hidden;
-  background-color: inherit;
-  padding: 20px 10px;
-  display: flex;
-}
-
-.column {
-  float: left;
-  width: 33.33%;
-  height: 300px;
-  padding: 10px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
+/* Navigation bar styling */
 .nav-bar {
   display: flex;
   justify-content: center;
@@ -137,6 +110,8 @@ ul li {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .header-heading span {
@@ -182,6 +157,7 @@ ul li {
   align-items: center;
 }
 
+/* Triple Container for the Modules */
 .triple-containers-container{
     display: flex;
     justify-content: center;
@@ -224,4 +200,19 @@ ul li {
 
 .triple-container + .triple-container{
     margin-left: 32px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 7%;
+  width: 100%;
+  background-color: #844F39;
+  text-align: center;
+}
+
+.footer p {
+  background-color: #844F39;
+  color: #F5E7DE;
 }
