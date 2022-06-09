@@ -15,7 +15,7 @@ p {
   text-align: center;
 }
 
-a li{
+a li {
   text-align: center;
   width: 80%;
   margin-left: 10%;
@@ -42,12 +42,12 @@ ul li {
   font-size: 1.2rem;
   /*Spacing between the options*/
   margin: 1rem 0;
-
 }
 
-.intro-container p {
+/* Intro containers styling */
+.intro-container {
   text-align: center;
-  margin-left: : 4.5%;
+  margin: : 5%;
 }
 
 /* Quiz Styling */
@@ -110,7 +110,7 @@ ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 30px;
   margin-bottom: 20px;
 }
 
@@ -138,7 +138,6 @@ ul li {
 }
 
 .quiz-container {
-  background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px 2px rgba(`100, 100, 100, 0.1);
   width: 600px;
@@ -149,57 +148,51 @@ ul li {
   padding: 4rem;
 }
 
-
-
-.center{
+.center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 /* Triple Container for the Modules */
-.triple-containers-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 64px;
-
+.triple-containers-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 64px;
 }
 
-.triple-container-header{
-    font-size: 20px;
-    text-align: center;
-    border: 3px solid #543118;
-    border-radius: 5px;
-    padding: 8px;
+.triple-container-header {
+  font-size: 20px;
+  text-align: center;
+  border: 3px solid #543118;
+  border-radius: 5px;
+  padding: 8px;
 }
 
-.triple-container-body{
-    text-align: justify;
-    text-justify: inter-word;
-    padding-top: 12px;
+.triple-container-body {
+  text-align: justify;
+  text-justify: inter-word;
+  padding-top: 12px;
 }
 
-.triple-container-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 12px;
-    font-size: 18px;
-
+.triple-container-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 12px;
+  font-size: 18px;
 }
 
-.triple-container-footer button{
+.triple-container-footer button {}
 
+.triple-container {
+  background-color: #F5E7DE;
+  padding: 32px;
 }
 
-.triple-container{
-    background-color: #F5E7DE;
-    padding: 32px;
-}
-
-.triple-container + .triple-container{
-    margin-left: 32px;
+.triple-container+.triple-container {
+  margin-left: 32px;
 }
 
 .footer {
