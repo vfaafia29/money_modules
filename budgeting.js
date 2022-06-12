@@ -1,41 +1,40 @@
-const quizData = [
-    {
-        question: "What is a budget?",
-        a: "Estimated income and expenditure over a period of time",
-        b: "How much you've spent",
-        c: "Attitudes towards money",
-        d: "How much savings you have",
-        correct: "a",
-    },
-    {
-        question: "What are the 3 biggest expenses?",
-        a: "Food, stationery and toys",
-        b: "Food, shelter and transport",
-        c: "Shelter, clothing and food",
-        d: "Food, electronics and cars",
-        correct: "b",
-    },
-    {
-        question: "Which is an example of income?",
-        a: "Stationery",
-        b: "Insurance",
-        c: "Petrol",
-        d: "Lunch money",
-        correct: "d",
-    },
-    {
-        question: "Which is an example of an expense?",
-        a: "Dividends",
-        b: "Gifts",
-        c: "Repairs",
-        d: "Wages",
-        correct: "c",
-    },
+const quizData = [{
+    question: "What is a budget?",
+    a: "Estimated income and expenditure over a period of time",
+    b: "How much you've spent",
+    c: "Attitudes towards money",
+    d: "How much savings you have",
+    correct: "a",
+  },
+  {
+    question: "What are the 3 biggest expenses?",
+    a: "Food, stationery and toys",
+    b: "Food, shelter and transport",
+    c: "Shelter, clothing and food",
+    d: "Food, electronics and cars",
+    correct: "b",
+  },
+  {
+    question: "Which is an example of income?",
+    a: "Stationery",
+    b: "Insurance",
+    c: "Petrol",
+    d: "Lunch money",
+    correct: "d",
+  },
+  {
+    question: "Which is an example of an expense?",
+    a: "Dividends",
+    b: "Gifts",
+    c: "Repairs",
+    d: "Wages",
+    correct: "c",
+  },
 
 
 ];
 
-const quiz= document.getElementById('quiz')
+const quiz = document.getElementById('quiz')
 const answerEls = document.querySelectorAll('.answer')
 const questionEl = document.getElementById('question')
 const optionA = document.getElementById('optionA')
@@ -52,49 +51,49 @@ loadQuiz()
 
 function loadQuiz() {
 
-    deselectAnswers()
+  deselectAnswers()
 
-    const currentQuizData = quizData[currentQuiz]
+  const currentQuizData = quizData[currentQuiz]
 
-    questionEl.innerText = currentQuizData.question
-    optionA.innerText = currentQuizData.a
-    optionB.innerText = currentQuizData.b
-    optionC.innerText = currentQuizData.c
-    optionD.innerText = currentQuizData.d
+  questionEl.innerText = currentQuizData.question
+  optionA.innerText = currentQuizData.a
+  optionB.innerText = currentQuizData.b
+  optionC.innerText = currentQuizData.c
+  optionD.innerText = currentQuizData.d
 }
 
 function deselectAnswers() {
-    answerEls.forEach(answerEl => answerEl.checked = false)
+  answerEls.forEach(answerEl => answerEl.checked = false)
 }
 
 function getSelected() {
-    let answer
-    answerEls.forEach(answerEl => {
-        if(answerEl.checked) {
-            answer = answerEl.id
-        }
-    })
-    return answer
+  let answer
+  answerEls.forEach(answerEl => {
+    if (answerEl.checked) {
+      answer = answerEl.id
+    }
+  })
+  return answer
 }
 
 
 submitBtn.addEventListener('click', () => {
-    const answer = getSelected()
-    if(answer) {
-       if(answer === quizData[currentQuiz].correct) {
-           score++
-       }
+  const answer = getSelected()
+  if (answer) {
+    if (answer === quizData[currentQuiz].correct) {
+      score++
+    }
 
-       currentQuiz++
+    currentQuiz++
 
-       if(currentQuiz < quizData.length) {
-           loadQuiz()
-       } else {
-           quiz.innerHTML = `
+    if (currentQuiz < quizData.length) {
+      loadQuiz()
+    } else {
+      quiz.innerHTML = `
            <h2>You answered ${score}/${quizData.length} questions correctly</h2>
 
            <button onclick="location.reload()">Reload</button>
            `
-       }
     }
+  }
 })

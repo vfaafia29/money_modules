@@ -10,6 +10,8 @@
 
 <body>
   <!-- Header-->
+
+
   <div class="header">
     <div class="header-heading">
       <img src="logo.png" alt="logo" class="logo">
@@ -25,37 +27,63 @@
 
 
 
-  <!-- Contact Us Form -->
-  <h2>Introduction to Financial Literacy: Money Mindsets</h2>
-  <div class="content">
-    <p>Financial literacy. Although this may sound big and scary, do not stress
-    Money Modules is here to break down these confusing concepts</p>
-
-    <p>First of all lets discuss money mindsets. Our money mindset is our values
-    and beliefs that influence how we choose to manage our money.</p>
-
-    <p>Understanding our money mindsets will help us to identify what really
-    matters to us and our potential weaknesses where we could develop better
-    money habits. Financial indepence will be the end goal for most of us, where
-    money give us options in life. For example the option to buy our own home,
-    the option to invest in our education, the option to help out our families
-    while still being able to provide for our own etc.</p>
-
-    <p>It's important to remeber that financial indpendence is a long term
-    journey. So when setting our financial goals the aim isn't to get rid of
-    all the stuff we enjoy. For example we may value going out with friends, in
-    the long term getting rid of this isn't very sustainable instead we may try
-    to limit outings to once a week instead of 3-4 times a week</p>
+  <div class="slideshow-container">
+    <h2>Introduction to Financial Literacy: Money Mindsets</h2>
 
 
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="intro_slides/1.png" alt="intro slide 1" style="width:100%">
+    </div>
 
+    <div class="mySlides fade">
+      <img src="intro_slides/2.png" alt="intro slide 2" style="width:100%">
+    </div>
 
-    <a href="introquiz.html">Money Mindsets Quiz</a>
+    <div class="mySlides fade">
+      <img src="intro_slides/3.png" alt="intro slide 3" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="intro_slides/4.png" alt="intro slide 4" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="intro_slides/5.png" alt="intro slide 5" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <a href="introquiz.html"><img src="intro_slides/6.png" alt="intro slide 6" style="width:100%"></a>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+  </div>
+
+  <script src="slideshow.js"></script>
+
+
   <div class="footer">
     <p>Disclaimer I am not a financial advisor this is just general advice about
-    financial literacy for educational purposes</p>
+      financial literacy for educational purposes</p>
   </div>
+
+
+
+
+
 
 </body>
 

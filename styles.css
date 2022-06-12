@@ -6,6 +6,14 @@
   background-color: #F5E7DE;
 }
 
+.mySlides {
+  display: none
+}
+
+img {
+  vertical-align: middle;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   background-color: inherit;
@@ -62,6 +70,14 @@ ul li {
   margin-left: auto;
   margin-right: auto;
   flex-direction: column;
+}
+
+.quiz-link {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Quiz Styling */
@@ -140,7 +156,7 @@ ul li {
   padding-right: 20px;
 }
 
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+/*When the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
   .header a {
     float: none;
@@ -151,6 +167,86 @@ ul li {
   .header-right {
     float: none;
   }
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px 200px 0;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
 }
 
 .quiz-container {
@@ -175,7 +271,7 @@ ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 64px;
+  padding: 5px 64px;
 }
 
 .triple-container-header {
@@ -184,6 +280,12 @@ ul li {
   border: 3px solid #543118;
   border-radius: 5px;
   padding: 8px;
+  margin-bottom: 10px;
+}
+
+.triple-container-image {
+  display: flex;
+  align-items: center;
 }
 
 .triple-container-body {
@@ -221,7 +323,7 @@ ul li {
   text-align: center;
 }
 
-.footer p{
+.footer p {
   background-color: #844F39;
   color: #F5E7DE;
 }
