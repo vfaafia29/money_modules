@@ -1,3 +1,4 @@
+// Quiz questions and options
 const quizData = [{
     question: "What is a budget?",
     a: "Estimated income and expenditure over a period of time",
@@ -34,6 +35,7 @@ const quizData = [{
 
 ];
 
+// Where the information for each constant will go into the html page
 const quiz = document.getElementById('quiz')
 const answerEls = document.querySelectorAll('.answer')
 const questionEl = document.getElementById('question')
@@ -76,7 +78,7 @@ function getSelected() {
   return answer
 }
 
-
+// Submit Button
 submitBtn.addEventListener('click', () => {
   const answer = getSelected()
   if (answer) {
@@ -85,13 +87,14 @@ submitBtn.addEventListener('click', () => {
     }
 
     currentQuiz++
-
+    // Score
     if (currentQuiz < quizData.length) {
       loadQuiz()
     } else {
       quiz.innerHTML = `
            <h2>You answered ${score}/${quizData.length} questions correctly</h2>
 
+    <!-- Reload -->
            <button onclick="location.reload()">Reload</button>
            `
     }

@@ -1,3 +1,4 @@
+// Quiz questions and options
 const quizData = [{
     question: "Which is NOT an example of fa'alavelave?",
     a: "Wedding",
@@ -34,6 +35,7 @@ const quizData = [{
 
 ];
 
+// Constants that will be transferred into the HTML file
 const quiz = document.getElementById('quiz')
 const answerEls = document.querySelectorAll('.answer')
 const questionEl = document.getElementById('question')
@@ -86,12 +88,14 @@ submitBtn.addEventListener('click', () => {
 
     currentQuiz++
 
+    // Score
     if (currentQuiz < quizData.length) {
       loadQuiz()
     } else {
       quiz.innerHTML = `
            <h2>You answered ${score}/${quizData.length} questions correctly</h2>
 
+           <!-- reload -->
            <button onclick="location.reload()">Reload</button>
            `
     }

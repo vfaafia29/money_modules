@@ -11,6 +11,7 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
+// Changes the dot when slide is changed
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");

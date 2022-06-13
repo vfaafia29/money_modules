@@ -1,8 +1,9 @@
+// Quiz Questions and Options
 const quizData = [{
     question: "What is a money mindset?",
     a: "How we should spend our money",
     b: "Values and beliefs that influence our money choices",
-    c: "Values and beleifs that influence our education",
+    c: "Values and beliefs that influence our education",
     d: "Limiting our spending",
     correct: "b",
   },
@@ -34,6 +35,7 @@ const quizData = [{
 
 ];
 
+// Information that will be put into the HTML
 const quiz = document.getElementById('quiz')
 const answerEls = document.querySelectorAll('.answer')
 const questionEl = document.getElementById('question')
@@ -76,7 +78,7 @@ function getSelected() {
   return answer
 }
 
-
+// Submit Button
 submitBtn.addEventListener('click', () => {
   const answer = getSelected()
   if (answer) {
@@ -86,12 +88,14 @@ submitBtn.addEventListener('click', () => {
 
     currentQuiz++
 
+// Score
     if (currentQuiz < quizData.length) {
       loadQuiz()
     } else {
       quiz.innerHTML = `
            <h2>You answered ${score}/${quizData.length} questions correctly</h2>
 
+<!-- Reload button -->
            <button onclick="location.reload()">Reload</button>
            `
     }
